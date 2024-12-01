@@ -44,18 +44,19 @@ function formatWeatherForecast(response) {
   const currentWindSpeed = currentWeather.wind.speed;
 
   const now = new Date();
-
   // Format the date without the "at"
   let formattedDate = new Intl.DateTimeFormat("en-US", {
-    weekday: "long", // e.g. 'Thursday'
-    year: "numeric", // e.g. '2024'
-    month: "long", // e.g. 'November'
-    day: "numeric", // e.g. '28'
-    hour: "2-digit", // e.g. '05'
-    minute: "2-digit", // e.g. '21'
-    second: "2-digit", // e.g. '09'
-    hour12: true,
+    timeZone: "Asia/Kolkata", // Set the desired time zone, e.g., 'UTC' or 'America/New_York'
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
   }).format(now);
+
 
   // Prepare the response message
   let message = `*Weather Forecast for ${cityName}, ${countryName}* 🌍\n\n`;
