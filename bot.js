@@ -87,8 +87,6 @@ bot.command("subscribe", async (ctx) => {
 
 // City name input and weather check
 bot.on("message", async (ctx) => {
-  console.log(ctx);
-  
   const userMessage = ctx.message.text.toLowerCase();
   const userId = ctx.from.id;
 
