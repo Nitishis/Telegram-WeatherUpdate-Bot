@@ -46,7 +46,7 @@ function formatWeatherForecast(response) {
   const now = new Date();
   // Format the date without the "at"
   let formattedDate = new Intl.DateTimeFormat("en-US", {
-    timeZone: "UTC", // Set the desired time zone, e.g., 'UTC' or 'Asia/Kolkata'
+    timeZone: "Asia/Kolkata", // Set the desired time zone, e.g., 'UTC' or 'America/New_York'
     weekday: "long",
     year: "numeric",
     month: "long",
