@@ -54,7 +54,7 @@ function formatWeatherForecast(response) {
     hour: "2-digit", // e.g. '05'
     minute: "2-digit", // e.g. '21'
     second: "2-digit", // e.g. '09'
-    hour12: true,
+    hour12: false,
   }).format(now);
 
   // Prepare the response message
